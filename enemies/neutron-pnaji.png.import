@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brbxfqkkccdng"
-path="res://.godot/imported/nega.png-24514b000196be588fa7f146f5325460.ctex"
+uid="uid://ji6ryx13xnr8"
+path="res://.godot/imported/neutron-pnaji.png-0027361bfae837a2bcb7b8a22f52d286.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://all-in-one/nega.png"
-dest_files=["res://.godot/imported/nega.png-24514b000196be588fa7f146f5325460.ctex"]
+source_file="res://enemies/neutron-pnaji.png"
+dest_files=["res://.godot/imported/neutron-pnaji.png-0027361bfae837a2bcb7b8a22f52d286.ctex"]
 
 [params]
 

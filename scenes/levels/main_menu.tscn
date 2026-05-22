@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://dhoder0h5u386"]
+
+[ext_resource type="Texture2D" uid="uid://bhmmh2igrl2n1" path="res://scenes-ui/MainMenu.png" id="1_fsby3"]
+
+[node name="MainMenu" type="Control" unique_id=1872470926]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BG" type="TextureRect" parent="." unique_id=880898541]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1, 0.99611336)
+texture = ExtResource("1_fsby3")
+metadata/_edit_use_anchors_ = true
+
+[node name="M" type="MarginContainer" parent="." unique_id=668065857]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.00703125
+anchor_top = 0.009722223
+anchor_right = 1.0070312
+anchor_bottom = 1.0097222
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+metadata/_edit_use_anchors_ = true
+
+[node name="VB" type="VBoxContainer" parent="M" unique_id=682696135]
+texture_filter = 1
+custom_minimum_size = Vector2(512, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="TextureButton" type="TextureButton" parent="M/VB" unique_id=610589008]
+custom_minimum_size = Vector2(128, 320)
+layout_mode = 2
+stretch_mode = 0

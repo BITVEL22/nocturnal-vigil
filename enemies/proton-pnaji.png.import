@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ji6ryx13xnr8"
-path="res://.godot/imported/neutron-pnaji.png-0916c064961d2a4ebf36aa43f481fb51.ctex"
+uid="uid://cb0quwcg8b7oe"
+path="res://.godot/imported/proton-pnaji.png-ad42042b2738a7c4ccbbd0f3e46e2f05.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://all-in-one/neutron-pnaji.png"
-dest_files=["res://.godot/imported/neutron-pnaji.png-0916c064961d2a4ebf36aa43f481fb51.ctex"]
+source_file="res://enemies/proton-pnaji.png"
+dest_files=["res://.godot/imported/proton-pnaji.png-ad42042b2738a7c4ccbbd0f3e46e2f05.ctex"]
 
 [params]
 

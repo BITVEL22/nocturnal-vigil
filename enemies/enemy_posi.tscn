@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cysj8igb0wukp"]
 
-[ext_resource type="Texture2D" uid="uid://cb0quwcg8b7oe" path="res://all-in-one/proton-pnaji.png" id="1_1558p"]
+[ext_resource type="Texture2D" uid="uid://cb0quwcg8b7oe" path="res://enemies/proton-pnaji.png" id="1_1558p"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eviww"]
 atlas = ExtResource("1_1558p")

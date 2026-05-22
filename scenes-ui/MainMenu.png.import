@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c6oyio7e1aenv"
-path="res://.godot/imported/llama_1.png-dc987a91acda4f4129d34abe611428d0.ctex"
+uid="uid://bhmmh2igrl2n1"
+path="res://.godot/imported/MainMenu.png-04b6f9ad4412d2d03a1b2d57d68e5415.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://all-in-one/llama_1.png"
-dest_files=["res://.godot/imported/llama_1.png-dc987a91acda4f4129d34abe611428d0.ctex"]
+source_file="res://scenes-ui/MainMenu.png"
+dest_files=["res://.godot/imported/MainMenu.png-04b6f9ad4412d2d03a1b2d57d68e5415.ctex"]
 
 [params]
 

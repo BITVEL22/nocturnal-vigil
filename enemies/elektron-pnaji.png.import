@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6v40xdbjt828"
-path="res://.godot/imported/Main Menu.png-7d104c6307535d42a32c033fa8b1218a.ctex"
+uid="uid://b10d6wqbuc6i8"
+path="res://.godot/imported/elektron-pnaji.png-d670c7e9ca7adf96fe5ca085187ffc7a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://all-in-one/main/Main Menu.png"
-dest_files=["res://.godot/imported/Main Menu.png-7d104c6307535d42a32c033fa8b1218a.ctex"]
+source_file="res://enemies/elektron-pnaji.png"
+dest_files=["res://.godot/imported/elektron-pnaji.png-d670c7e9ca7adf96fe5ca085187ffc7a.ctex"]
 
 [params]
 

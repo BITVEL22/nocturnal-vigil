@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://eiux4jkuhy4q"
-path="res://.godot/imported/nega-kecil.png-bad53355514466d0bf4bc2deb41b300c.ctex"
+uid="uid://bo617ocfb11l3"
+path="res://.godot/imported/uranium-pnaji.png-72350c1053ec691a3ec451d480d2f570.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://all-in-one/nega-kecil.png"
-dest_files=["res://.godot/imported/nega-kecil.png-bad53355514466d0bf4bc2deb41b300c.ctex"]
+source_file="res://enemies/uranium-pnaji.png"
+dest_files=["res://.godot/imported/uranium-pnaji.png-72350c1053ec691a3ec451d480d2f570.ctex"]
 
 [params]
 
