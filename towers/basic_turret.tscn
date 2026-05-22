@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cwvqa4c4de76b"]
+
+[ext_resource type="Texture2D" uid="uid://d36knh2k1j0vl" path="res://all-in-one/TowerDefends/PNG/Default size/towerDefense_tile181.png" id="1_gl551"]
+[ext_resource type="Texture2D" uid="uid://18xssax121gd" path="res://all-in-one/TowerDefends/PNG/Default size/towerDefense_tile249.png" id="2_6s6oi"]
+
+[node name="BasicTurret" type="Node2D" unique_id=1396859809]
+
+[node name="base" type="Sprite2D" parent="." unique_id=274366688]
+texture = ExtResource("1_gl551")
+
+[node name="turret" type="Sprite2D" parent="." unique_id=1093024821]
+texture_filter = 1
+position = Vector2(0, 1)
+rotation = 6.2831855
+scale = Vector2(0.75, 0.82421875)
+texture = ExtResource("2_6s6oi")

@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://jhg4wxuv16bb"]
 
+[ext_resource type="Texture2D" uid="uid://b6v40xdbjt828" path="res://all-in-one/main/Main Menu.png" id="1_i8rdg"]
+
 [node name="MainMenu" type="Control" unique_id=200377147]
 layout_mode = 3
 anchors_preset = 15
@@ -15,3 +17,4 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("1_i8rdg")
