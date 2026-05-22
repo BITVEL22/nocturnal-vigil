@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bn2xih6rsb08b"
-path="res://.godot/imported/scifi_lab_tileset.png-34f1d6b1641a84fae63818f8c5a29d69.ctex"
+uid="uid://5jona4ot1d2d"
+path="res://.godot/imported/Decor.png-98d86436a89d65526bebbacad53d8b9a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://all-in-one/main/scifi_lab_tileset.png"
-dest_files=["res://.godot/imported/scifi_lab_tileset.png-34f1d6b1641a84fae63818f8c5a29d69.ctex"]
+source_file="res://all-in-one/main/Decor.png"
+dest_files=["res://.godot/imported/Decor.png-98d86436a89d65526bebbacad53d8b9a.ctex"]
 
 [params]
 

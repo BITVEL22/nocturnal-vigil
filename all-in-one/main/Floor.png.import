@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsdlw67xx63q7"
-path="res://.godot/imported/lab_tileset_2_by_sandoair_dav65gu.png-040b76a8b5427c52bf1e82604c44177f.ctex"
+uid="uid://di05oqpr01p0p"
+path="res://.godot/imported/Floor.png-17ef697193c82786d4290963287dd895.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://all-in-one/main/lab_tileset_2_by_sandoair_dav65gu.png"
-dest_files=["res://.godot/imported/lab_tileset_2_by_sandoair_dav65gu.png-040b76a8b5427c52bf1e82604c44177f.ctex"]
+source_file="res://all-in-one/main/Floor.png"
+dest_files=["res://.godot/imported/Floor.png-17ef697193c82786d4290963287dd895.ctex"]
 
 [params]
 
