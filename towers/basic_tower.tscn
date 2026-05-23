@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dct1m3tp3sqlm"]
+
+[ext_resource type="Texture2D" uid="uid://dwxmqyoendkpw" path="res://all-in-one/Towers/Basic Tower.png" id="1_8k6i7"]
+[ext_resource type="Script" uid="uid://8yyun8u8scnk" path="res://towers/basic_tower.gd" id="1_nr72b"]
+
+[node name="BasicTower" type="Node2D" unique_id=756024550]
+script = ExtResource("1_nr72b")
+
+[node name="BasicTower" type="Sprite2D" parent="." unique_id=73023480]
+texture_filter = 1
+texture = ExtResource("1_8k6i7")
+region_enabled = true
+region_rect = Rect2(128, 3032, 128, 128)
+
+[node name="Flash" type="Marker2D" parent="BasicTower" unique_id=339376302]
+position = Vector2(42, 0)
