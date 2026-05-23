@@ -1,9 +1,1 @@
-extends Node2D
-
-
-func _physics_process(delta: float) -> void:
-	turn()
-	
-func turn():
-	var enemy_position = get_global_mouse_position()
-	get_node("BasicTower").look_at(enemy_position)
+extends "res://towers/Towers.gd"
