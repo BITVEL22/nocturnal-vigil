@@ -1,8 +1,11 @@
 [gd_scene format=3 uid="uid://jhg4wxuv16bb"]
 
-[ext_resource type="Texture2D" uid="uid://b6v40xdbjt828" path="res://all-in-one/main/Main Menu.png" id="1_i8rdg"]
+[ext_resource type="Texture2D" uid="uid://bhmmh2igrl2n1" path="res://scenes-ui/MainMenu.png" id="1_i8rdg"]
+[ext_resource type="Texture2D" uid="uid://dn62eq3fdd1lq" path="res://all-in-one/menu_pixel-adv/Levels/06.png" id="2_1u60c"]
+[ext_resource type="Texture2D" uid="uid://cedleemxcu0y8" path="res://all-in-one/menu_pixel-adv/Levels/07.png" id="3_x2c2c"]
 
-[node name="MainMenu" type="Control" unique_id=200377147]
+[node name="MainMenu" type="Control" unique_id=1872470926]
+texture_filter = 1
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -10,11 +13,40 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=1948033930]
+[node name="BG" type="TextureRect" parent="." unique_id=880898541]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1, 0.99611336)
 texture = ExtResource("1_i8rdg")
+
+[node name="MenuButton" type="MenuButton" parent="." unique_id=1999756346]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -57.5
+offset_top = 25.0
+offset_right = 57.5
+offset_bottom = 198.0
+grow_horizontal = 2
+grow_vertical = 2
+icon = ExtResource("2_1u60c")
+expand_icon = true
+item_count = 1
+popup/item_0/id = 0
+
+[node name="Button" type="Button" parent="." unique_id=1899848390]
+layout_mode = 0
+offset_left = 699.0
+offset_top = 384.0
+offset_right = 820.0
+offset_bottom = 525.0
+icon = ExtResource("3_x2c2c")
+icon_alignment = 1
+expand_icon = true
