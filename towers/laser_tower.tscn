@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://cp2x8modwbr2b"]
+
+[ext_resource type="Script" uid="uid://dennp0wdhohom" path="res://towers/laser_tower.gd" id="1_8sye7"]
+[ext_resource type="Texture2D" uid="uid://blknw7ut1kbms" path="res://all-in-one/Towers/TowerBase4.png" id="1_jsqgv"]
+[ext_resource type="Texture2D" uid="uid://dqqatyns3442h" path="res://all-in-one/Towers/TurretMuzzle3.png" id="2_8sye7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_li8r0"]
+atlas = ExtResource("1_jsqgv")
+region = Rect2(0, 0, 96, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0c5l2"]
+atlas = ExtResource("1_jsqgv")
+region = Rect2(96, 0, 96, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_s8lk2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_li8r0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0c5l2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[node name="Laser Tower" type="Node2D" unique_id=81817972]
+script = ExtResource("1_8sye7")
+
+[node name="Base" type="AnimatedSprite2D" parent="." unique_id=460258756]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_s8lk2")
+autoplay = "default"
+frame_progress = 0.5301506
+offset = Vector2(-0.5, 5)
+
+[node name="Muzzle" type="Sprite2D" parent="." unique_id=1385296228]
+texture_filter = 1
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("2_8sye7")
+
+[node name="Flash" type="Marker2D" parent="Muzzle" unique_id=433574661]
+position = Vector2(16, 0)

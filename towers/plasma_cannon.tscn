@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://c2ktstui7a3p3"]
+
+[ext_resource type="Script" uid="uid://bjgqidupksbby" path="res://towers/plasma_cannon.gd" id="1_t3fd7"]
+[ext_resource type="Texture2D" uid="uid://byorla8v188sj" path="res://all-in-one/Towers/TowerBase2.png" id="2_jbtdm"]
+[ext_resource type="Texture2D" uid="uid://biqrs0n2kh8hd" path="res://all-in-one/Towers/TurretMuzzle5.png" id="3_ranlg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r8lnj"]
+atlas = ExtResource("2_jbtdm")
+region = Rect2(0, 0, 96, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n00ur"]
+atlas = ExtResource("2_jbtdm")
+region = Rect2(96, 0, 96, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kqur6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r8lnj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n00ur")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[node name="Plasma Cannon" type="Node2D" unique_id=170442823]
+script = ExtResource("1_t3fd7")
+
+[node name="Base" type="AnimatedSprite2D" parent="." unique_id=576574724]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_kqur6")
+autoplay = "default"
+frame_progress = 0.16364022
+offset = Vector2(0, 2.93)
+
+[node name="Muzzle" type="Sprite2D" parent="." unique_id=558802840]
+texture_filter = 1
+texture = ExtResource("3_ranlg")
+offset = Vector2(3.51, 1.01)
+
+[node name="Flash" type="Marker2D" parent="Muzzle" unique_id=1389006869]
+position = Vector2(16, 0)

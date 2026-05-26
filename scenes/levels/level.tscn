@@ -8,7 +8,12 @@
 [ext_resource type="Texture2D" uid="uid://cbsey1nbiqfl" path="res://all-in-one/main/Objects.png" id="6_xfk5q"]
 [ext_resource type="Texture2D" uid="uid://rdfmuw0gaerp" path="res://all-in-one/main/Horror.png" id="7_qogh7"]
 [ext_resource type="Texture2D" uid="uid://cowbg00maa6vx" path="res://all-in-one/tiles_laboratory_LandOfPixels/32px/tilesStuff.png" id="8_ouxo3"]
-[ext_resource type="PackedScene" uid="uid://dct1m3tp3sqlm" path="res://towers/basic_tower.tscn" id="9_icy5c"]
+[ext_resource type="PackedScene" uid="uid://dct1m3tp3sqlm" path="res://towers/tesla_coil.tscn" id="9_icy5c"]
+[ext_resource type="PackedScene" uid="uid://c2ktstui7a3p3" path="res://towers/plasma_cannon.tscn" id="10_rmjfq"]
+[ext_resource type="PackedScene" uid="uid://b3a03ju48j7ma" path="res://towers/magnet_tower.tscn" id="11_7pb6i"]
+[ext_resource type="PackedScene" uid="uid://cp2x8modwbr2b" path="res://towers/laser_tower.tscn" id="12_xfk5q"]
+[ext_resource type="PackedScene" uid="uid://bx1rvyi2bub22" path="res://towers/cryo_tower.tscn" id="13_qogh7"]
+[ext_resource type="PackedScene" uid="uid://1e7sc0tkn56" path="res://towers/reactor_tower.tscn" id="14_8iyoh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8iyoh"]
 texture = ExtResource("1_mbbpy")
@@ -1806,6 +1811,20 @@ tile_set = SubResource("TileSet_38mka")
 
 [node name="Towers" type="Node2D" parent="." unique_id=1284170142]
 
-[node name="BasicTower" parent="Towers" unique_id=756024550 instance=ExtResource("9_icy5c")]
-position = Vector2(897, 64)
-scale = Vector2(0.7, 0.7)
+[node name="Tesla Coil" parent="Towers" unique_id=756024550 instance=ExtResource("9_icy5c")]
+position = Vector2(896, 60)
+
+[node name="Plasma Cannon" parent="Towers" unique_id=170442823 instance=ExtResource("10_rmjfq")]
+position = Vector2(703, 159)
+
+[node name="Magnet Tower" parent="Towers" unique_id=977951008 instance=ExtResource("11_7pb6i")]
+position = Vector2(896, 160)
+
+[node name="Laser Tower" parent="Towers" unique_id=81817972 instance=ExtResource("12_xfk5q")]
+position = Vector2(704, 352)
+
+[node name="Cryo Tower" parent="Towers" unique_id=469915896 instance=ExtResource("13_qogh7")]
+position = Vector2(703, 448)
+
+[node name="Reactor Tower" parent="Towers" unique_id=893568165 instance=ExtResource("14_8iyoh")]
+position = Vector2(321, 353)

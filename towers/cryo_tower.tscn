@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://bx1rvyi2bub22"]
+
+[ext_resource type="Script" uid="uid://b8ix7ft44jltg" path="res://cryo_tower.gd" id="1_6rag3"]
+[ext_resource type="Texture2D" uid="uid://bmw2qam8k4xxp" path="res://all-in-one/Towers/TowerBase5.png" id="2_321f0"]
+[ext_resource type="Texture2D" uid="uid://cdowubywuvexc" path="res://all-in-one/Towers/TurretMuzzle2.png" id="3_orhss"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xl704"]
+atlas = ExtResource("2_321f0")
+region = Rect2(192, 0, 96, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6mjtl"]
+atlas = ExtResource("2_321f0")
+region = Rect2(384, 0, 96, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g25t0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xl704")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6mjtl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[node name="Cryo Tower" type="Node2D" unique_id=469915896]
+script = ExtResource("1_6rag3")
+
+[node name="Base" type="AnimatedSprite2D" parent="." unique_id=397957332]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_g25t0")
+autoplay = "default"
+frame_progress = 0.40065938
+
+[node name="Muzzle" type="Sprite2D" parent="." unique_id=894302717]
+texture_filter = 1
+texture = ExtResource("3_orhss")
+offset = Vector2(10, 0.5)
+
+[node name="Flash" type="Marker2D" parent="Muzzle" unique_id=2023802153]
+position = Vector2(32, 0)
