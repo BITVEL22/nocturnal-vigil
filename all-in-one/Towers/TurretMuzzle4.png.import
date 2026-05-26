@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwxmqyoendkpw"
-path="res://.godot/imported/Basic Tower.png-02416f519ae1751e527596193af03cec.ctex"
+uid="uid://bp1u6un4yyxlb"
+path="res://.godot/imported/TurretMuzzle4.png-729f4905ff67b5c88428d170e95d31b3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://all-in-one/Towers/Basic Tower.png"
-dest_files=["res://.godot/imported/Basic Tower.png-02416f519ae1751e527596193af03cec.ctex"]
+source_file="res://all-in-one/Towers/TurretMuzzle4.png"
+dest_files=["res://.godot/imported/TurretMuzzle4.png-729f4905ff67b5c88428d170e95d31b3.ctex"]
 
 [params]
 

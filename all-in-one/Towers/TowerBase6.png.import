@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://yywbi4eshjlm"
-path="res://.godot/imported/Cryo Tower.png-b1a78df8878dac89b2708c0493e57767.ctex"
+uid="uid://ckqw5lgg00mju"
+path="res://.godot/imported/TowerBase6.png-f8b5372c65f59e873920530714798dfe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://all-in-one/Towers/Cryo Tower.png"
-dest_files=["res://.godot/imported/Cryo Tower.png-b1a78df8878dac89b2708c0493e57767.ctex"]
+source_file="res://all-in-one/Towers/TowerBase6.png"
+dest_files=["res://.godot/imported/TowerBase6.png-f8b5372c65f59e873920530714798dfe.ctex"]
 
 [params]
 

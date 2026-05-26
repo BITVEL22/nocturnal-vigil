@@ -1807,5 +1807,5 @@ tile_set = SubResource("TileSet_38mka")
 [node name="Towers" type="Node2D" parent="." unique_id=1284170142]
 
 [node name="BasicTower" parent="Towers" unique_id=756024550 instance=ExtResource("9_icy5c")]
-position = Vector2(897, 65.00001)
+position = Vector2(897, 64)
 scale = Vector2(0.7, 0.7)

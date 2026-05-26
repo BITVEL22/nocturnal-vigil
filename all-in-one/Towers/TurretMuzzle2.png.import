@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://owvjl1lg0u2y"
-path="res://.godot/imported/Dis What.png-2dae697ed69c5b2d26a8e1a802e2578f.ctex"
+uid="uid://cdowubywuvexc"
+path="res://.godot/imported/TurretMuzzle2.png-b1035640ba61d3d3bef974a32af3479e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://all-in-one/Towers/Dis What.png"
-dest_files=["res://.godot/imported/Dis What.png-2dae697ed69c5b2d26a8e1a802e2578f.ctex"]
+source_file="res://all-in-one/Towers/TurretMuzzle2.png"
+dest_files=["res://.godot/imported/TurretMuzzle2.png-b1035640ba61d3d3bef974a32af3479e.ctex"]
 
 [params]
 

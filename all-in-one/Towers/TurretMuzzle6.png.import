@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dl35otxcsidnf"
-path="res://.godot/imported/Magnet Tower.png-890c13b079821905ee8b19fb9ce0f93a.ctex"
+uid="uid://c8xfcxgf2mtdo"
+path="res://.godot/imported/TurretMuzzle6.png-f15b651f09a62f124dbc28237fbcae05.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://all-in-one/Towers/Magnet Tower.png"
-dest_files=["res://.godot/imported/Magnet Tower.png-890c13b079821905ee8b19fb9ce0f93a.ctex"]
+source_file="res://all-in-one/Towers/TurretMuzzle6.png"
+dest_files=["res://.godot/imported/TurretMuzzle6.png-f15b651f09a62f124dbc28237fbcae05.ctex"]
 
 [params]
 

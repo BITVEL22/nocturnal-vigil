@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://862crx0x1pv1"
-path="res://.godot/imported/YellowT.png-6f9a245eac65799dfb80db1d0c16e99c.ctex"
+uid="uid://blknw7ut1kbms"
+path="res://.godot/imported/TowerBase4.png-64dc76e8beab80869559bfbe8ae740c2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://all-in-one/Towers/YellowT.png"
-dest_files=["res://.godot/imported/YellowT.png-6f9a245eac65799dfb80db1d0c16e99c.ctex"]
+source_file="res://all-in-one/Towers/TowerBase4.png"
+dest_files=["res://.godot/imported/TowerBase4.png-64dc76e8beab80869559bfbe8ae740c2.ctex"]
 
 [params]
 
