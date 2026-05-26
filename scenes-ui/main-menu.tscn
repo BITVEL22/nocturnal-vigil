@@ -30,7 +30,7 @@ grow_vertical = 2
 scale = Vector2(1, 0.99611336)
 texture = ExtResource("1_txllr")
 
-[node name="Credit" type="Button" parent="." unique_id=1899848390]
+[node name="Shop" type="Button" parent="." unique_id=1899848390]
 texture_filter = 1
 layout_mode = 1
 anchors_preset = 8
