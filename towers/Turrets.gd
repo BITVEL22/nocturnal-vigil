@@ -5,4 +5,4 @@ func _physics_process(delta: float) -> void:
 	
 func turn():
 	var enemy_position = get_global_mouse_position()
-	get_node("BasicTower").look_at(enemy_position)
+	get_node("Muzzle").look_at(enemy_position)
