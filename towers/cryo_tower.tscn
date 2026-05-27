@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bx1rvyi2bub22"]
 
-[ext_resource type="Script" uid="uid://b8ix7ft44jltg" path="res://cryo_tower.gd" id="1_6rag3"]
+[ext_resource type="Script" uid="uid://b8ix7ft44jltg" path="res://towers/cryo_tower.gd" id="1_6rag3"]
 [ext_resource type="Texture2D" uid="uid://bmw2qam8k4xxp" path="res://all-in-one/Towers/TowerBase5.png" id="2_321f0"]
 [ext_resource type="Texture2D" uid="uid://cdowubywuvexc" path="res://all-in-one/Towers/TurretMuzzle2.png" id="3_orhss"]
 

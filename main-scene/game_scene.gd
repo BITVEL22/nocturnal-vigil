@@ -24,7 +24,7 @@ func _unhandled_input(event):
 		cancel_build_mode()
 	
 func initiate_build_mode(tower_type):
-	build_type = tower_type + "T1"
+	build_type = tower_type
 	build_mode = true 
 	get_node("UI").set_tower_preview(build_type, get_global_mouse_position())
 
@@ -50,6 +50,6 @@ func cancel_build_mode():
 	
 func verify_and_build():
 	if build_valid:
-		var new_tower = load("res://Scenes/Turrets/" + build_type + ".tscn").instantiate()
+		var new_tower = load("res://towers/" + build_type + ".tscn").instantiate()
 		new_tower.position = build_location
 		map_node.get_node("Turrets").add_child(new_tower, true)
