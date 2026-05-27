@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bbfn5v2l33jvo"]
 
+[ext_resource type="Script" uid="uid://dbxkbjmn10bih" path="res://scenes-ui/main_menu.gd" id="1_5ojl7"]
 [ext_resource type="Texture2D" uid="uid://bhmmh2igrl2n1" path="res://scenes-ui/MainMenu.png" id="1_txllr"]
 [ext_resource type="FontFile" uid="uid://bqja61gdpqmt8" path="res://all-in-one/Font/PixelatedEleganceRegular-ovawB.ttf" id="6_ht5i0"]
 
@@ -44,6 +45,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_5ojl7")
 
 [node name="Panel" type="Panel" parent="." unique_id=1632900780]
 layout_mode = 1
@@ -53,17 +55,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_8qkjk")
-
-[node name="BG" type="TextureRect" parent="." unique_id=880898541]
-visible = false
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(1, 0.99611336)
-texture = ExtResource("1_txllr")
 
 [node name="Version" type="Panel" parent="." unique_id=962748191]
 layout_mode = 1
@@ -144,7 +135,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_8qkjk")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_8qkjk")
 text = "Options"
 
-[node name="Shop" type="Button" parent="VB" unique_id=1789575944]
+[node name="Credits" type="Button" parent="VB" unique_id=1789575944]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(0.7019608, 0.827451, 0.827451, 1)
@@ -157,7 +148,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_5ojl7")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_iaklo")
 theme_override_styles/hover = SubResource("StyleBoxFlat_8qkjk")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_8qkjk")
-text = "Shop"
+text = "Credits"
 
 [node name="Exit" type="Button" parent="." unique_id=1600136713]
 layout_mode = 1
@@ -203,3 +194,8 @@ theme_override_font_sizes/font_size = 65
 text = "Nocturnal Vigil"
 horizontal_alignment = 1
 autowrap_mode = 2
+
+[connection signal="pressed" from="VB/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VB/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="VB/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

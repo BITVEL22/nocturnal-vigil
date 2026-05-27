@@ -1,3 +1,156 @@
 [gd_scene format=3 uid="uid://conolghwy4kut"]
 
+[ext_resource type="PackedScene" uid="uid://dwwe8wsd4hvj8" path="res://scenes/maps/level.tscn" id="1_0mq7g"]
+[ext_resource type="Script" uid="uid://d2unsdhssmwfr" path="res://main-scene/game_scene.gd" id="1_6v4xg"]
+[ext_resource type="Texture2D" uid="uid://huvtkhdu3ffl" path="res://all-in-one/button-b/Hotbar.png" id="2_101yd"]
+[ext_resource type="Texture2D" uid="uid://c1gy0lufvk1cl" path="res://all-in-one/Towers/TowerBase1.png" id="3_igbhu"]
+[ext_resource type="Texture2D" uid="uid://c8xfcxgf2mtdo" path="res://all-in-one/Towers/TurretMuzzle6.png" id="3_jne6v"]
+[ext_resource type="Texture2D" uid="uid://ckqw5lgg00mju" path="res://all-in-one/Towers/TowerBase6.png" id="6_yxymj"]
+[ext_resource type="Texture2D" uid="uid://k7gfbao2dujr" path="res://all-in-one/Towers/TurretMuzzle1.png" id="7_syog7"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jne6v"]
+texture = ExtResource("2_101yd")
+expand_margin_left = 5.0
+expand_margin_right = 5.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_igbhu"]
+load_path = "res://.godot/imported/Hotbar.png-08549fe427d7b491c73d1dbccd88a3e6.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o5mif"]
+texture = SubResource("CompressedTexture2D_igbhu")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pvbr4"]
+load_path = "res://.godot/imported/Hotbar.png-08549fe427d7b491c73d1dbccd88a3e6.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6v4xg"]
+texture = SubResource("CompressedTexture2D_pvbr4")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wfpa3"]
+atlas = ExtResource("3_igbhu")
+region = Rect2(0, 0, 96, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ynud8"]
+atlas = ExtResource("3_igbhu")
+region = Rect2(96, 0, 96, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_o5mif"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wfpa3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ynud8")
+}],
+"loop": true,
+"name": &"Base1",
+"speed": 3.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k81cl"]
+atlas = ExtResource("6_yxymj")
+region = Rect2(0, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m68p1"]
+atlas = ExtResource("6_yxymj")
+region = Rect2(192, 0, 96, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_e80au"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k81cl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m68p1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
 [node name="GameScene" type="Node2D" unique_id=993941847]
+script = ExtResource("1_6v4xg")
+
+[node name="Map1" parent="." unique_id=615733236 instance=ExtResource("1_0mq7g")]
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1914853134]
+
+[node name="HUD" type="Control" parent="UI" unique_id=645166923]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Buildbar" type="VBoxContainer" parent="UI/HUD" unique_id=1929029161]
+custom_minimum_size = Vector2(80, 600)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -300.0
+offset_right = 80.0
+offset_bottom = 300.0
+grow_vertical = 2
+theme_override_constants/separation = 9
+alignment = 1
+
+[node name="tesla_coil" type="Button" parent="UI/HUD/Buildbar" unique_id=1576233204 groups=["build_buttons"]]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_styles/normal = SubResource("StyleBoxTexture_jne6v")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_o5mif")
+theme_override_styles/hover = SubResource("StyleBoxTexture_6v4xg")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Base" type="AnimatedSprite2D" parent="UI/HUD/Buildbar/tesla_coil" unique_id=709667615]
+texture_filter = 1
+position = Vector2(40, 34)
+scale = Vector2(0.75, 0.859375)
+sprite_frames = SubResource("SpriteFrames_o5mif")
+animation = &"Base1"
+autoplay = "Base1"
+
+[node name="TextureRect2" type="TextureRect" parent="UI/HUD/Buildbar/tesla_coil" unique_id=783370717]
+texture_filter = 1
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 0
+offset_left = 2.0
+offset_top = -6.0
+offset_right = 82.0
+offset_bottom = 74.0
+texture = ExtResource("3_jne6v")
+
+[node name="reactor_tower" type="Button" parent="UI/HUD/Buildbar" unique_id=287238311 groups=["build_buttons"]]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_styles/normal = SubResource("StyleBoxTexture_jne6v")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_o5mif")
+theme_override_styles/hover = SubResource("StyleBoxTexture_6v4xg")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Base" type="AnimatedSprite2D" parent="UI/HUD/Buildbar/reactor_tower" unique_id=1201511446]
+texture_filter = 1
+position = Vector2(41.75, 41.690205)
+scale = Vector2(0.8177083, 0.8682256)
+sprite_frames = SubResource("SpriteFrames_e80au")
+autoplay = "default"
+offset = Vector2(0, -4.5)
+
+[node name="TextureRect2" type="TextureRect" parent="UI/HUD/Buildbar/reactor_tower" unique_id=64765139]
+texture_filter = 1
+custom_minimum_size = Vector2(55, 55)
+layout_mode = 0
+offset_left = 18.0
+offset_top = 7.0
+offset_right = 73.0
+offset_bottom = 71.0
+texture = ExtResource("7_syog7")
