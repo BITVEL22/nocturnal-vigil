@@ -34,12 +34,11 @@ func update_tower_preview():
 	var title_position = map_node.get_node("TowerExclusion").map_to_local(current_tile)
 	
 	if map_node.get_node("TowerExclusion").get_cell_source_id(0, current_tile):
-		get_node("UI").update_tower_preview(title_position, "fff")
+		get_node("UI").update_tower_preview(title_position, "00ff00ff")
 		build_valid = true 
 		build_location = title_position
-	
 	else:
-		get_node("UI").update_tower_preview(title_position, "000")
+		get_node("UI").update_tower_preview(title_position, "ff0000ff")
 		build_valid = false
 		
 
@@ -52,4 +51,4 @@ func verify_and_build():
 	if build_valid:
 		var new_tower = load("res://towers/" + build_type + ".tscn").instantiate()
 		new_tower.position = build_location
-		map_node.get_node("Turrets").add_child(new_tower, true)
+		map_node.get_node("Towers").add_child(new_tower, true)
