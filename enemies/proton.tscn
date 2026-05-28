@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://dq21d3dhky7jk"]
+
+[ext_resource type="Script" uid="uid://dyhf8t08xkbdy" path="res://enemies/proton.gd" id="1_8ke4i"]
+[ext_resource type="Texture2D" uid="uid://cb0quwcg8b7oe" path="res://enemies/proton-pnaji.png" id="1_yb8gh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ke4i"]
+atlas = ExtResource("1_yb8gh")
+region = Rect2(0, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_00s2t"]
+atlas = ExtResource("1_yb8gh")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g8h2a"]
+atlas = ExtResource("1_yb8gh")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fgjs7"]
+atlas = ExtResource("1_yb8gh")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x8ed7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ke4i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_00s2t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g8h2a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fgjs7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rcieu"]
+radius = 8.0
+
+[node name="Proton" type="PathFollow2D" unique_id=317945707]
+loop = false
+script = ExtResource("1_8ke4i")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=41816382]
+
+[node name="ProtonBody" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1999487501]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_x8ed7")
+frame = 1
+frame_progress = 0.79832596
+
+[node name="Collision" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1781582675]
+position = Vector2(-1, 0)
+shape = SubResource("CircleShape2D_rcieu")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=871339283]
