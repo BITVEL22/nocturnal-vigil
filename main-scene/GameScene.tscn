@@ -75,6 +75,8 @@ script = ExtResource("1_6v4xg")
 
 [node name="Map1" parent="." unique_id=615733236 instance=ExtResource("1_0mq7g")]
 
+[node name="Towers" type="Node2D" parent="Map1" unique_id=109983597]
+
 [node name="UI" type="CanvasLayer" parent="." unique_id=1914853134]
 script = ExtResource("3_yxymj")
 

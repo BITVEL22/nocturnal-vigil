@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bce45o8rq0gap"
-path="res://.godot/imported/5.jpeg-1d5f86cc60094b2c6e08b01aaa46733f.ctex"
+uid="uid://cl33v0u8041k2"
+path="res://.godot/imported/Obstructed.png-0d06ef2ca2f6fd17e73419c3d9121562.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/Towers/5.jpeg"
-dest_files=["res://.godot/imported/5.jpeg-1d5f86cc60094b2c6e08b01aaa46733f.ctex"]
+source_file="res://all-in-one/Towers/Obstructed.png"
+dest_files=["res://.godot/imported/Obstructed.png-0d06ef2ca2f6fd17e73419c3d9121562.ctex"]
 
 [params]
 

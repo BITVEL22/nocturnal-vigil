@@ -3,7 +3,8 @@ extends Node2D
 var map_node 
 
 var build_mode= false
-var build_valid = false 
+var build_valid = false
+var build_tile
 var build_location
 var build_type 
 
@@ -24,6 +25,8 @@ func _unhandled_input(event):
 		cancel_build_mode()
 	
 func initiate_build_mode(tower_type):
+	if build_mode:
+		cancel_build_mode()
 	build_type = tower_type
 	build_mode = true 
 	get_node("UI").set_tower_preview(build_type, get_global_mouse_position())
@@ -33,22 +36,24 @@ func update_tower_preview():
 	var current_tile = map_node.get_node("TowerExclusion").local_to_map(mouse_position)
 	var title_position = map_node.get_node("TowerExclusion").map_to_local(current_tile)
 	
-	if map_node.get_node("TowerExclusion").get_cell_source_id(0, current_tile):
-		get_node("UI").update_tower_preview(title_position, "00ff00ff")
-		build_valid = true 
-		build_location = title_position
-	else:
+	if map_node.get_node("TowerExclusion").get_cell_source_id(current_tile) != -1:
 		get_node("UI").update_tower_preview(title_position, "ff0000ff")
-		build_valid = false
+		build_valid = false 
 		
+	else:
+		get_node("UI").update_tower_preview(title_position, "00ff00ff")
+		build_valid = true
+		build_location = title_position
+		build_tile = current_tile
 
 func cancel_build_mode():
 	build_mode = false 
 	build_valid = false 
-	get_node("UI/TowerPreview").queue_free()
+	get_node("UI/TowerPreview").free()
 	
 func verify_and_build():
 	if build_valid:
 		var new_tower = load("res://towers/" + build_type + ".tscn").instantiate()
 		new_tower.position = build_location
 		map_node.get_node("Towers").add_child(new_tower, true)
+		map_node.get_node("TowerExclusion").set_cell(build_tile, 7, Vector2(2, 0))

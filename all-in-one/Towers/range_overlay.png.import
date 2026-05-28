@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0d1cckdnyj2"
-path="res://.godot/imported/7-removebg-preview.png-424a3ce7504fa19c7698c7e87512a3ce.ctex"
+uid="uid://c101agoorki4e"
+path="res://.godot/imported/range_overlay.png-4a9ce52c6abae789b136d9be6c38289f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/Towers/7-removebg-preview.png"
-dest_files=["res://.godot/imported/7-removebg-preview.png-424a3ce7504fa19c7698c7e87512a3ce.ctex"]
+source_file="res://all-in-one/Towers/range_overlay.png"
+dest_files=["res://.godot/imported/range_overlay.png-4a9ce52c6abae789b136d9be6c38289f.ctex"]
 
 [params]
 
