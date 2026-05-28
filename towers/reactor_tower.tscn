@@ -46,10 +46,10 @@ offset = Vector2(5.5, 0.5)
 
 [node name="Flash" type="Marker2D" parent="Muzzle" unique_id=831695964]
 
-[node name="Range" type="Area2D" parent="." unique_id=1615038082]
+[node name="range" type="Area2D" parent="." unique_id=1615038082]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Range" unique_id=1176746271]
+[node name="CS" type="CollisionShape2D" parent="range" unique_id=1176746271]
 shape = SubResource("CircleShape2D_3via0")
 
-[connection signal="body_entered" from="Range" to="." method="_on_range_body_entered"]
-[connection signal="body_exited" from="Range" to="." method="_on_range_body_exited"]
+[connection signal="body_entered" from="range" to="." method="_on_range_body_entered"]
+[connection signal="body_exited" from="range" to="." method="_on_range_body_exited"]

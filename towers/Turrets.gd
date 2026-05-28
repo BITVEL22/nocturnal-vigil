@@ -2,10 +2,11 @@ extends Node2D
 
 var enemy_array = []
 var build = false
+var type = ""
 
 func _ready() -> void:
 	if build:
-		self.get_node("Range/CollisionShape2D").get_shape().radius = 0.5 * GameData.tower_data[self.get_name()]["range"]
+		self.get_node("range/CS").get_shape().radius = 0.5 * GameData.tower_data[type]["range"]
 
 func _physics_process(delta: float) -> void:
 	turn()

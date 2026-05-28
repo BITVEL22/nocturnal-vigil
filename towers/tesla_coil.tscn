@@ -26,6 +26,9 @@ animations = [{
 "speed": 3.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_d1rhh"]
+radius = 22.92
+
 [node name="Tesla Coil" type="Node2D" unique_id=756024550]
 script = ExtResource("1_nr72b")
 
@@ -46,3 +49,8 @@ offset = Vector2(2.55, 1.775)
 
 [node name="Flash" type="Marker2D" parent="Muzzle" unique_id=310941703]
 position = Vector2(16, 0)
+
+[node name="range" type="Area2D" parent="." unique_id=1878387922]
+
+[node name="CS" type="CollisionShape2D" parent="range" unique_id=961991020]
+shape = SubResource("CircleShape2D_d1rhh")
