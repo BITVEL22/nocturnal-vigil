@@ -86,7 +86,6 @@ func verify_and_build():
 		new_tower.position = build_location
 		new_tower.build = true
 		
-		# TAMBAHKAN BARIS INI: Kirim tipe tower ke script Turrets.gd
 		new_tower.type = build_type 
 		
 		map_node.get_node("Towers").add_child(new_tower, true)
