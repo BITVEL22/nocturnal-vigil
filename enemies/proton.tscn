@@ -51,6 +51,7 @@ script = ExtResource("1_8ke4i")
 [node name="ProtonBody" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1999487501]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_x8ed7")
+autoplay = "default"
 frame = 1
 frame_progress = 0.79832596
 
