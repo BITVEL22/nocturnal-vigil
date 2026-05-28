@@ -8,6 +8,9 @@
 [ext_resource type="Script" uid="uid://su55ntyvxsb7" path="res://main-scene/ui.gd" id="3_yxymj"]
 [ext_resource type="Texture2D" uid="uid://ckqw5lgg00mju" path="res://all-in-one/Towers/TowerBase6.png" id="6_yxymj"]
 [ext_resource type="Texture2D" uid="uid://k7gfbao2dujr" path="res://all-in-one/Towers/TurretMuzzle1.png" id="7_syog7"]
+[ext_resource type="Texture2D" uid="uid://dlhc8fu6vsf5g" path="res://all-in-one/button-b/play.png" id="9_bx3kp"]
+[ext_resource type="Texture2D" uid="uid://dvogut7tmnlis" path="res://all-in-one/button-b/pause.png" id="10_exgas"]
+[ext_resource type="Texture2D" uid="uid://b6tku2pcgidx3" path="res://all-in-one/button-b/UIspeedup.png" id="11_l4pmx"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jne6v"]
 texture = ExtResource("2_101yd")
@@ -90,17 +93,18 @@ grow_vertical = 2
 mouse_filter = 2
 
 [node name="Buildbar" type="VBoxContainer" parent="UI/HUD" unique_id=1929029161]
+texture_filter = 1
 custom_minimum_size = Vector2(80, 600)
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_top = -300.0
-offset_right = 80.0
-offset_bottom = 300.0
+offset_left = 8.0
+offset_top = -298.0
+offset_right = 88.0
+offset_bottom = 302.0
 grow_vertical = 2
 theme_override_constants/separation = 9
-alignment = 1
 
 [node name="tesla_coil" type="Button" parent="UI/HUD/Buildbar" unique_id=1576233204 groups=["build_buttons"]]
 custom_minimum_size = Vector2(80, 80)
@@ -159,3 +163,25 @@ offset_top = 7.0
 offset_right = 73.0
 offset_bottom = 71.0
 texture = ExtResource("7_syog7")
+
+[node name="GameControls" type="HBoxContainer" parent="UI/HUD" unique_id=645054707]
+texture_filter = 1
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 1
+offset_right = 150.0
+offset_bottom = 50.0
+scale = Vector2(0.67, 0.67)
+
+[node name="PausePlay" type="TextureButton" parent="UI/HUD/GameControls" unique_id=1132511340]
+process_mode = 3
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("9_bx3kp")
+texture_pressed = ExtResource("10_exgas")
+
+[node name="SpeedUp" type="TextureButton" parent="UI/HUD/GameControls" unique_id=386643306]
+layout_mode = 2
+texture_normal = ExtResource("11_l4pmx")
+
+[connection signal="pressed" from="UI/HUD/GameControls/PausePlay" to="UI" method="_on_pause_play_pressed"]
+[connection signal="pressed" from="UI/HUD/GameControls/SpeedUp" to="UI" method="_on_speed_up_pressed"]

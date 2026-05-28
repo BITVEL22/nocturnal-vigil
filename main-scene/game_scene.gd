@@ -84,5 +84,6 @@ func verify_and_build():
 	if build_valid:
 		var new_tower = load("res://towers/" + build_type + ".tscn").instantiate()
 		new_tower.position = build_location
+		new_tower.build = true
 		map_node.get_node("Towers").add_child(new_tower, true)
 		map_node.get_node("TowerExclusion").set_cell(build_tile, 7, Vector2(2, 0))

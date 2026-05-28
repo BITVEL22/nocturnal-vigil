@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://ni70emhjgept"]
+
+[ext_resource type="Texture2D" uid="uid://cb0quwcg8b7oe" path="res://enemies/proton-pnaji.png" id="1_1558p"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eviww"]
+atlas = ExtResource("1_1558p")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ean1"]
+atlas = ExtResource("1_1558p")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qyr7j"]
+atlas = ExtResource("1_1558p")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p2u0w"]
+atlas = ExtResource("1_1558p")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0iho8"]
+atlas = ExtResource("1_1558p")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ooob0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eviww")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ean1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qyr7j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p2u0w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0iho8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_eviww"]
+radius = 12.0
+
+[node name="enemy-posi" type="Area2D" unique_id=1046583498]
+texture_filter = 1
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=292555837]
+sprite_frames = SubResource("SpriteFrames_ooob0")
+frame_progress = 0.039676435
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=235827672]
+shape = SubResource("CircleShape2D_eviww")
